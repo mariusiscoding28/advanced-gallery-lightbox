@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Gallery Lightbox</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <div class="gallery-lightbox">
+
+        <!-- Row displays as flex -->
+        <div class="row">
+
+          <div class="gallery-lightbox__box active" data-index="0" data-fullsize="images/img-full-1.jpg"
+            data-caption="Gallery caption goes here for 1">
+            <img src="images/img-small-1.jpg" alt="">
+          </div><!-- .gallery-lightbox__box ends -->
+
+          <div class="gallery-lightbox__box" data-index="1" data-fullsize="images/img-full-2.jpg"
+            data-caption="Gallery caption goes here for 2">
+            <img src="images/img-small-2.jpg" alt="">
+          </div><!-- .gallery-lightbox__box ends -->
+
+          <div class="gallery-lightbox__box" data-index="2" data-fullsize="images/img-full-3.jpg"
+            data-caption="Gallery caption goes here for 3">
+            <img src="images/img-small-3.jpg" alt="">
+          </div><!-- .gallery-lightbox__box ends -->
+
+          <div class="gallery-lightbox__box" data-index="3" data-fullsize="images/img-full-4.jpg"
+            data-caption="Gallery caption goes here for 4">
+            <img src="images/img-small-4.jpg" alt="">
+          </div><!-- .gallery-lightbox__box ends -->
+
+          <div class="gallery-lightbox__box" data-index="4" data-fullsize="images/img-full-5.jpg"
+            data-caption="Gallery caption goes here for 5">
+            <img src="images/img-small-5.jpg" alt="">
+          </div><!-- .gallery-lightbox__box ends -->
+
+          <div class="gallery-lightbox__box" data-index="5" data-fullsize="images/img-full-6.jpg"
+            data-caption="Gallery caption goes here for 6">
+            <img src="images/img-small-6.jpg" alt="">
+          </div>
+
+        </div><!-- .row ends -->
+
+      </div><!-- .gallery-lightbox ends -->
+
+    </div><!-- .container ends -->
+
+    <!-- Popup -->
+    <div class="gallery-lightbox__popup">
+
+      <div class="gallery-lightbox__popup--options">
+
+        <a href="" class="option-link fullscreen"><i class="ri-fullscreen-line"></i></a>
+        <a href="" class="option-link zoom-out"><i class="ri-zoom-out-line"></i></a>
+        <a href="" class="option-link zoom-in"><i class="ri-zoom-in-line"></i></a>
+        <a href="" class="download" download><i class="ri-download-2-line"></i></a>
+
+      </div><!-- .gallery-lightbox__popup--options ends -->
+
+      <div class="gallery-lightbox__popup--content">
+
+        <div class="fullview">
+          <!-- <img src="images/img-full-1.jpg" alt=""> -->
+        </div>
+
+        <p>Gallery caption goes here</p>
+
+      </div><!-- .gallery-lightbox__popup--content ends -->
+
+      <div class="gallery-lightbox__popup--navigation">
+        <button class="arrow arrow--left"><i class="ri-arrow-left-line"></i></button>
+        <button class="arrow arrow--right"><i class="ri-arrow-right-line"></i></button>
+      </div><!-- .gallery-lightbox__popup--navigation ends -->
+
+    </div><!-- .gallery-lightbox__popup ends -->
+
+    <script src="js/script.js"></script>
+  </body>
+
+</html>
